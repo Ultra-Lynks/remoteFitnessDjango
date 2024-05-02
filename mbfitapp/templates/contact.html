@@ -1,0 +1,159 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+  
+ 
+  <body>
+    
+    
+    <!-- END header -->
+    
+    <section class="home-slider-loop-false  inner-page owl-carousel">
+      <div class="slider-item" style="background-image: url('{% static 'img/IMG_2109.JPG'%}');">
+        
+        <div class="container">
+          <div class="row slider-text align-items-center justify-content-center">
+            <div class="col-md-8 text-center col-sm-12 element-animate">
+              <h1>Contact</h1>
+              
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+    <!-- END slider -->
+
+    <section class="section element-animate">
+      <div class="clearfix mb-5 pb-5">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12 text-center heading-wrap">
+              <h2>Get In Touch</h2>
+              <span class="back-text">Contact</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <form action="https://formspree.io/f/mqkrnavw" method="POST">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <label>Name</label>
+                  <input type="text" name='name' id="defaultContactForm" class="form-control ">
+                </div>
+                <div class="col-md-6 form-group">
+                  <label>Phone</label>
+                  <input type="text" name='phone' id="defaultContactForm" class="form-control ">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 form-group">
+                  
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 form-group">
+                  <label >Email</label>
+                  <input type="email" name='_replyto' id="defaultContactForm" class="form-control ">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 form-group">
+                  <label>Write Message</label>
+                  <textarea name="message" id="exampleFormControlTextarea2" class="form-control " cols="30" rows="8"></textarea>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="submit" value="Send Message" class="btn btn-primary">
+                </div>
+              </div>
+            </form>
+          </div>
+          
+          <div class="col-lg-6 pl-2 pl-lg-5">
+
+            <div class="col-md-8 mx-auto contact-form-contact-info">
+              <h4 class="mb-5">Contact Details</h4>
+                <p class="d-flex">
+                  <span class="ion-ios-location icon mr-5"></span>
+                  <span>Tema community 25</span>
+                </p>
+
+                <p class="d-flex">
+                  <span class="ion-ios-telephone icon mr-5"></span>
+                  <span>+233541234988 / +233201866079</span>
+                </p>
+
+                <p class="d-flex">
+                  <span class="ion-android-mail icon mr-5"></span>
+                  <span>miguelbernardmartey@gmail.com
+                  </span>
+                </p>
+              </div>
+
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-4 mb-5">
+            <h3>About Us</h3>
+            <p class="mb-5">Our experienced fitness trainers are dedicated to creating customized plans tailored to your specific goals, whether you're aiming to lose weight, build muscle, improve flexibility, or enhance athletic performance. We believe in the power of consistency and progress, providing ongoing support and motivation to keep you on track and motivated on your fitness journey.</p>
+            <ul class="list-unstyled footer-link d-flex footer-social">
+              <li><a href="#" class="p-2"><span class="fa fa-twitter"></span></a></li>
+              <li><a href="#" class="p-2"><span class="fa fa-facebook"></span></a></li>
+              <li><a href="#" class="p-2"><span class="fa fa-instagram"></span></a></li>
+            </ul>
+
+          </div>
+          <div class="col-md-5 mb-5">
+            <h3>Contact Info</h3>
+            <ul class="list-unstyled footer-link">
+              <li class="d-block">
+                <span class="d-block">Address:</span>
+                <span class="text-white">Tema community 25</span></li>
+              <li class="d-block"><span class="d-block">Telephone:</span><span class="text-white">+233541234988 / +233201866079</span></li>
+              <li class="d-block"><span class="d-block">Email:</span><span class="text-white">miguelbernardmartey@gmail.com
+              </span></li>
+            </ul>
+            
+
+
+          </div>
+          <div class="col-md-3 mb-5">
+            <h3>Quick Links</h3>
+            <ul class="list-unstyled footer-link">
+              <li><a href="{% url 'Home' %}">Home</a></li>
+              <li><a href="{% url 'about' %}">About</a></li>
+              <li><a href="{% url 'services' %}">Services</a></li>
+              <li><a href="{% url 'contact' %}">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+          
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 text-md-center text-left">
+            <p>&copy; Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Remote Fitness Training</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- END footer -->
+
+    <!-- loader -->
+    <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#f4b214"/></svg></div>
+
+  </body>
+  {% endblock %}
